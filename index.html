@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demenz: So senkst du dein Risiko wirklich | Dr. Lara Vadlau</title>
+<meta name="description" content="Der Gehirngesundheits-Guide von Dr. Lara Vadlau: 16 konkrete Schritte, um dein Demenzrisiko zu senken. Basierend auf der Lancet Commission 2024 und den großen Präventionsstudien, mit Checkliste ab 40.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dr. Lara Vadlau · Longevity Medicine">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Demenz: So senkst du dein Risiko wirklich">
+<meta property="og:description" content="16 konkrete Schritte für dein Gehirn. Rund 45 % aller Demenzfälle hängen mit veränderbaren Faktoren zusammen.">
+<meta property="og:url" content="https://lara-demenz.vercel.app">
+<meta property="og:image" content="https://lara-demenz.vercel.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Demenz: So senkst du dein Risiko wirklich">
+<meta name="twitter:description" content="16 konkrete Schritte für dein Gehirn. Rund 45 % aller Demenzfälle hängen mit veränderbaren Faktoren zusammen.">
+<meta name="twitter:image" content="https://lara-demenz.vercel.app/og.jpg">
+<link rel="canonical" href="https://lara-demenz.vercel.app">
+<meta name="theme-color" content="#0d131e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#d4af37;--gold-soft:#e6c86b;--dark:#141b28;--darker:#0d131e;
+  --panel:#1b2434;--panel-2:#212c40;--line:rgba(212,175,55,.18);
+  --text:#e8ecf3;--muted:#9aa6bb;--muted-2:#6f7c93;
+  --green:#5fbf8f;--amber:#e0a94a;--red:#d97a72;--maxw:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--darker);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.serif{font-family:'Fraunces',Georgia,serif;font-weight:500}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:18px}
+a{color:var(--gold-soft);text-decoration:none}
+a:hover{text-decoration:underline}
+
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-soft));z-index:2000;transition:width .1s}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(13,19,30,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Fraunces',serif;font-size:19px;font-weight:600;letter-spacing:-.01em;color:#fff}
+.brand span{color:var(--gold)}
+nav.links{display:flex;gap:24px}
+nav.links a{color:var(--muted);font-size:13.5px;font-weight:500}
+nav.links a:hover{color:var(--gold);text-decoration:none}
+@media(max-width:900px){nav.links{display:none}}
+
+.hero{position:relative;padding:88px 0 70px;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-30%;right:-15%;width:680px;height:680px;background:radial-gradient(circle,rgba(212,175,55,.12) 0%,transparent 68%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-40%;left:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(95,191,143,.06) 0%,transparent 70%);pointer-events:none}
+.hero .container{position:relative;z-index:2}
+.hero h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(34px,5.4vw,58px);line-height:1.08;letter-spacing:-.02em;color:#fff;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{margin-top:20px;font-family:'Fraunces',serif;font-style:italic;font-size:clamp(17px,2.2vw,21px);color:var(--gold-soft)}
+.hero .lede{margin-top:22px;font-size:clamp(16px,2.1vw,19px);color:var(--muted);max-width:62ch;line-height:1.6}
+.hero .lede b{color:var(--text)}
+.byline{margin-top:34px;display:flex;align-items:center;gap:14px;color:var(--muted);font-size:14px}
+.byline .avatar{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none}
+.byline .avatar img{width:100%;height:100%;object-fit:cover}
+.byline b{color:var(--text)}
+
+section{padding:70px 0;border-top:1px solid rgba(255,255,255,.04)}
+.sec-head{max-width:64ch;margin-bottom:36px}
+.sec-head h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(26px,3.6vw,38px);line-height:1.15;letter-spacing:-.01em;color:#fff}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:17px}
+
+.principle{margin-top:28px;background:var(--darker);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 24px;color:var(--text);font-size:16px}
+.principle .l{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px}
+
+/* step items */
+.item{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-left:3px solid var(--gold);border-radius:14px;padding:24px 26px;margin-bottom:14px;display:grid;grid-template-columns:52px 1fr;gap:20px;align-items:start}
+.item.top{border-left-color:var(--green)}
+.item.money{border-left-color:var(--red)}
+.item .num{font-family:'Fraunces',serif;font-size:34px;font-weight:600;color:rgba(212,175,55,.5);line-height:1}
+.item .body h3{font-family:'Fraunces',serif;font-size:21px;color:#fff;font-weight:500;margin-bottom:8px}
+.item .body p{color:var(--muted);font-size:15px}
+.item .body p b{color:var(--text)}
+.item .evi{margin-top:12px;background:rgba(212,175,55,.06);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:13.5px;color:var(--text)}
+.item .src{display:block;margin-top:8px;font-size:12px;color:var(--muted-2);letter-spacing:.02em}
+@media(max-width:700px){.item{grid-template-columns:40px 1fr;gap:14px}}
+
+.tier{font-family:'Fraunces',serif;font-size:22px;font-weight:500;color:var(--gold-soft);margin:38px 0 16px}
+.tier:first-of-type{margin-top:0}
+
+/* checklist ab 40 */
+.check{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(max-width:640px){.check{grid-template-columns:1fr}}
+.check .row{display:flex;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px;align-items:center;color:var(--text);font-size:15px}
+.check .row::before{content:'✓';flex:none;width:26px;height:26px;border-radius:7px;border:2px solid var(--gold);color:var(--gold);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+
+.quote{margin-top:34px;text-align:center;font-family:'Fraunces',serif;font-style:italic;font-size:clamp(19px,2.6vw,24px);color:var(--gold-soft);max-width:60ch;margin-left:auto;margin-right:auto;line-height:1.5}
+
+.book{background:linear-gradient(135deg,#241d10,#15110a);border:1px solid var(--line);border-radius:18px;padding:30px 34px;text-align:center;margin-top:24px}
+.book .l{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px}
+.book p{color:var(--text);font-size:16.5px;max-width:60ch;margin:0 auto;line-height:1.6}
+.book p b{color:var(--gold-soft)}
+
+.cta{background:linear-gradient(135deg,var(--panel),var(--darker));border:1px solid var(--line);border-radius:22px;padding:52px 44px;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:520px;height:420px;background:radial-gradient(circle,rgba(212,175,55,.14),transparent 70%);pointer-events:none}
+.cta-photo{position:relative;width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:3px solid var(--gold);box-shadow:0 12px 34px rgba(0,0,0,.45);margin:0 auto 22px;display:block}
+.cta h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(26px,4vw,40px);color:#fff;position:relative;line-height:1.14}
+.cta p{color:var(--muted);max-width:54ch;margin:18px auto 0;position:relative;font-size:17px}
+.btn{display:inline-block;margin-top:30px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#1a1206;font-weight:600;font-size:15.5px;padding:15px 34px;border-radius:999px;position:relative;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 30px rgba(212,175,55,.22)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(212,175,55,.32);text-decoration:none}
+.cta .socials{margin-top:26px;display:flex;gap:24px;justify-content:center;position:relative}
+.cta .socials a{color:var(--muted);font-size:13.5px;cursor:pointer}
+
+.disclaimer{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:22px 26px;color:var(--muted-2);font-size:13.5px;line-height:1.6}
+.disclaimer b{color:var(--muted)}
+footer{padding:44px 0;border-top:1px solid var(--line);color:var(--muted-2);font-size:13px}
+footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+.hero-visual{margin-top:40px;border-radius:20px;overflow:hidden;border:1px solid var(--line);position:relative;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.hero-visual img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+.hero-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,19,30,.05),rgba(13,19,30,.55));pointer-events:none}
+.band{margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);position:relative}
+.band img{width:100%;display:block;aspect-ratio:21/9;object-fit:cover}
+.band::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,19,30,.10),rgba(13,19,30,.60));pointer-events:none}
+
+.more{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:860px){.more{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.more{grid-template-columns:1fr}}
+.more a{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:20px 22px;display:block;transition:border-color .2s,transform .2s;text-decoration:none}
+.more a:hover{border-color:var(--line);transform:translateY(-2px);text-decoration:none}
+.more a .t{display:block;font-family:'Fraunces',serif;font-size:18px;color:#fff;font-weight:500}
+.more a .d{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+.more a .go{color:var(--gold);font-size:13px;margin-top:10px;display:block}
+.tools{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.tool-btn{background:transparent;border:1px solid var(--line);color:var(--gold-soft);font-size:13.5px;font-weight:500;padding:11px 20px;border-radius:999px;cursor:pointer;font-family:inherit;transition:background .2s}
+.tool-btn:hover{background:rgba(212,175,55,.08)}
+
+@media print{
+  @page{margin:16mm}
+  #progress,header,.nl-overlay,.tools,.hero-visual,.band,.cta,.more-sec,.chal,.book{display:none !important}
+  html,body{background:#fff !important;color:#111 !important}
+  body{font-size:11pt}
+  .reveal{opacity:1 !important;transform:none !important}
+  section{padding:10px 0 !important;border-top:none !important;break-inside:avoid}
+  .container{max-width:100% !important;padding:0 !important}
+  h1,h2,h3,h4,.brand{color:#111 !important}
+  .eyebrow,.principle .l{color:#8a6d1f !important}
+  p,li,.sec-head p,.item .body p{color:#333 !important}
+  .item,.disclaimer,.principle,.item .evi,.check .row{background:#fff !important;border:1px solid #ccc !important;box-shadow:none !important;color:#111 !important}
+  .hero .sub,.quote,.tier{color:#8a6d1f !important}
+  .item .src{color:#777 !important}
+  a{color:#111 !important;text-decoration:none !important}
+}
+
+.nl-overlay{position:fixed;inset:0;background:rgba(6,10,16,.72);backdrop-filter:blur(4px);z-index:3000;display:none;align-items:center;justify-content:center;padding:20px}
+.nl-overlay.open{display:flex}
+.nl-modal{background:var(--panel);border:1px solid var(--line);border-radius:20px;max-width:440px;width:100%;padding:34px 32px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.nl-modal h3{font-family:'Fraunces',serif;font-weight:500;font-size:24px;color:#fff;margin-bottom:8px}
+.nl-modal p.intro{color:var(--muted);font-size:14.5px;margin-bottom:22px}
+.nl-close{position:absolute;top:14px;right:16px;background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;line-height:1;padding:4px}
+.nl-close:hover{color:var(--gold)}
+.nl-field{margin-bottom:14px}
+.nl-field label{display:block;font-size:12.5px;color:var(--gold);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px}
+.nl-field input{width:100%;background:var(--darker);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 14px;color:var(--text);font-size:15px;font-family:inherit}
+.nl-field input:focus{outline:none;border-color:var(--gold)}
+.nl-field .opt{color:var(--muted-2);text-transform:none;letter-spacing:0;font-weight:400}
+.nl-submit{width:100%;margin-top:8px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#1a1206;font-weight:600;font-size:15px;padding:14px;border:none;border-radius:999px;cursor:pointer;transition:transform .2s}
+.nl-submit:hover{transform:translateY(-1px)}
+.nl-submit[disabled]{opacity:.6;cursor:default}
+.nl-note{margin-top:14px;font-size:11.5px;color:var(--muted-2);line-height:1.5}
+.nl-success{text-align:center;padding:16px 0}
+.nl-success .ok{font-size:44px;color:var(--green);line-height:1;margin-bottom:12px}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<header>
+  <div class="container">
+    <div class="brand">Dr. Lara <span>Vadlau</span></div>
+    <nav class="links">
+      <a href="#hebel">Die stärksten Hebel</a>
+      <a href="#faktoren">Die 14 Faktoren</a>
+      <a href="#bonus">Bonus &amp; Geldfallen</a>
+      <a href="#liste">Checkliste ab 40</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="border-top:none">
+  <div class="container">
+    <div class="eyebrow reveal">Gehirngesundheits-Guide · Vertiefung zum Reel</div>
+    <h1 class="reveal">Demenz: So senkst du dein Risiko <em>wirklich</em>.</h1>
+    <p class="sub reveal">16 konkrete Schritte für dein Gehirn.</p>
+    <p class="lede reveal">Alzheimer lässt sich nicht einfach verhindern. Aber laut Lancet Commission 2024 hängen <b>rund 45 Prozent aller Demenzfälle mit 14 veränderbaren Faktoren</b> zusammen. Das ist eine der besten Nachrichten der Präventionsmedizin, denn es heißt: Du hast mehr in der Hand, als du denkst. Hier ist, was du konkret tun kannst.</p>
+    <div class="byline reveal">
+      <div class="avatar"><img src="lara-avatar.jpg" alt="Dr. Lara Vadlau"></div>
+      <div>Von <b>Dr. Lara Vadlau</b> · Longevity Medicine</div>
+    </div>
+    <div class="tools reveal">
+      <button class="tool-btn" onclick="window.print()">Als PDF speichern oder drucken</button>
+      <button class="tool-btn" id="shareBtn">Link teilen</button>
+    </div>
+    <div class="hero-visual reveal"><img src="hero.webp" alt="Walnüsse, Blutdruckmessgerät, Brille und Schachfigur auf dunklem Stein" loading="eager"></div>
+  </div>
+</section>
+
+<!-- STÄRKSTE HEBEL -->
+<section id="hebel">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Schritt 1 bis 3</div>
+      <h2>Die stärksten Hebel.</h2>
+      <p>Wenn du nur drei Dinge umsetzt, dann diese. Hier ist die Studienlage am stärksten.</p>
+    </div>
+
+    <div class="item top reveal"><div class="num">01</div><div class="body">
+      <h3>Blutdruck senken</h3>
+      <p><b>Ab 40 Ziel unter 130/80.</b> Eine Woche lang zu Hause messen, morgens und abends je zweimal, und die Werte zur Ärztin oder zum Arzt mitnehmen.</p>
+      <div class="evi">Intensive Blutdrucksenkung reduzierte leichte kognitive Störungen um rund 19 Prozent. Eine Studie mit fast 34.000 Menschen fand rund 15 Prozent weniger Demenzfälle.</div>
+      <span class="src">SPRINT MIND, JAMA 2019 · CRHCP, Nature Medicine 2025</span>
+    </div></div>
+
+    <div class="item top reveal"><div class="num">02</div><div class="body">
+      <h3>Alles kombinieren statt einzeln optimieren</h3>
+      <p>Bewegung, Ernährung, geistiges Training und Kontrolle der Herz-Kreislauf-Werte <b>gemeinsam angehen</b>, nicht nur einen Punkt.</p>
+      <div class="evi">Die Kombination verbesserte in großen Studien die Denkleistung. Ob sie auch Demenzdiagnosen verhindert, ist noch offen.</div>
+      <span class="src">FINGER, Lancet 2015 · US POINTER, JAMA 2025</span>
+    </div></div>
+
+    <div class="item top reveal"><div class="num">03</div><div class="body">
+      <h3>Hören ernst nehmen</h3>
+      <p><b>Hörtest ab 50,</b> danach alle paar Jahre. Wenn ein Hörgerät empfohlen wird: tragen, nicht in der Schublade lassen. Und die Ohren vor Lärm schützen.</p>
+      <div class="evi">Hörverlust ist laut Lancet einer der zwei größten Einzelfaktoren (rund 7 Prozent). Hörgeräte verlangsamten den geistigen Abbau bei Menschen mit erhöhtem Risiko um fast die Hälfte, in der Gesamtgruppe aber nicht.</div>
+      <span class="src">ACHIEVE, Lancet 2023 · Lancet Commission 2024</span>
+    </div></div>
+  </div>
+</section>
+
+<!-- SECTION IMAGE -->
+<section style="padding:0 0 8px;border-top:none">
+  <div class="container">
+    <div class="band reveal"><img src="sec.webp" alt="Schachbrett im warmen Abendlicht mit Buch und Kopfhörern" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- VERÄNDERBARE FAKTOREN -->
+<section id="faktoren">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Schritt 4 bis 14</div>
+      <h2>Die veränderbaren Risikofaktoren.</h2>
+      <p>Jeder Punkt zählt auf die 45 Prozent ein. Du musst nicht alle perfekt machen, aber jeder angegangene Faktor senkt dein Risiko.</p>
+    </div>
+
+    <div class="item reveal"><div class="num">04</div><div class="body">
+      <h3>Regelmäßig bewegen</h3>
+      <p><b>Mindestens 150 Minuten moderate Bewegung pro Woche plus 2x Krafttraining.</b> Im mittleren Alter anfangen, im Alter dranbleiben.</p>
+      <div class="evi">Die aktivsten Menschen im mittleren Alter hatten rund 41 Prozent weniger Demenzrisiko als die am wenigsten aktiven.</div>
+      <span class="src">Framingham Heart Study, JAMA Network Open 2025</span>
+    </div></div>
+
+    <div class="item reveal"><div class="num">05</div><div class="body">
+      <h3>LDL-Cholesterin kennen</h3>
+      <p><b>Ab 40 LDL messen, einmal im Leben auch Lp(a).</b> Erhöhte Werte ärztlich einordnen und behandeln lassen.</p>
+      <div class="evi">Hohes LDL im mittleren Alter gilt laut Lancet neben Hörverlust als größter Einzelfaktor (rund 7 Prozent).</div>
+      <span class="src">Lancet Commission 2024</span>
+    </div></div>
+
+    <div class="item reveal"><div class="num">06</div><div class="body">
+      <h3>Blutzucker im Blick</h3>
+      <p><b>HbA1c regelmäßig bestimmen lassen.</b> Bei Diabetes konsequent einstellen. Diabetes ist mit einem höheren Demenzrisiko verbunden, besonders bei langer, schlecht eingestellter Erkrankung.</p>
+      <span class="src">Lancet Commission 2024</span>
+    </div></div>
+
+    <div class="item reveal"><div class="num">07</div><div class="body">
+      <h3>Gewicht und Bauchumfang</h3>
+      <p>Vor allem im mittleren Alter <b>auf Bauchfett achten</b>. Kraft plus Ausdauer plus ausreichend Protein.</p>
+      <span class="src">Lancet Commission 2024</span>
+    </div></div>
+
+    <div class="item reveal"><div class="num">08</div><div class="body">
+      <h3>Augen checken</h3>
+      <p><b>Regelmäßig zur Augenkontrolle.</b> Grauen Star operieren lassen, wenn empfohlen. Unbehandelte Sehschwäche ist ein eigener Risikofaktor.</p>
+      <span class="src">Lancet Commission 2024</span>
+    </div></div>
+
+    <div class="item reveal"><div class="num">09</div><div class="body">
+      <h3>Schlaf schützen</h3>
+      <p><b>Rund 7 Stunden anpeilen.</b> Lautes Schnarchen, Atemaussetzer oder starke Tagesmüdigkeit: Schlafapnoe abklären.</p>
+      <div class="evi">Dauerhaft 6 Stunden oder weniger im mittleren Alter war mit rund 30 Prozent höherem Demenzrisiko verbunden.</div>
+      <span class="src">Sabia et al., Nature Communications 2021</span>
+    </div></div>
+
+    <div class="item reveal"><div class="num">10</div><div class="body">
+      <h3>Rauchen stoppen, Alkohol reduzieren</h3>
+      <p><b>Rauchstopp lohnt sich in jedem Alter.</b> Beim Alkohol gilt: je weniger, desto besser. Klar erhöhtes Risiko ab etwa 10 Gläsern Wein pro Woche.</p>
+      <span class="src">Lancet Commission 2024</span>
+    </div></div>
+
+    <div class="item reveal"><div class="num">11</div><div class="body">
+      <h3>Kopf schützen</h3>
+      <p><b>Helm beim Radfahren, Skifahren, Reiten.</b> Kopfverletzungen erhöhen das Risiko.</p>
+    </div></div>
+
+    <div class="item reveal"><div class="num">12</div><div class="body">
+      <h3>Kontakte pflegen, Stimmung ernst nehmen</h3>
+      <p><b>Feste soziale Termine einplanen.</b> Anhaltende Niedergeschlagenheit behandeln lassen, Einsamkeit und Depression sind eigene Risikofaktoren.</p>
+    </div></div>
+
+    <div class="item reveal"><div class="num">13</div><div class="body">
+      <h3>Geistig gefordert bleiben</h3>
+      <p><b>Echtes Neues lernen:</b> Sprache, Instrument, neue Sportart. Gehirnjogging-Apps allein reichen nicht.</p>
+    </div></div>
+
+    <div class="item reveal"><div class="num">14</div><div class="body">
+      <h3>Saubere Luft</h3>
+      <p><b>Ausdauertraining möglichst nicht an stark befahrenen Straßen.</b> Luftverschmutzung zählt zu den 14 Lancet-Faktoren.</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- BONUS & GELDFALLEN -->
+<section id="bonus">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Schritt 15 und 16</div>
+      <h2>Bonus und Geldfallen.</h2>
+    </div>
+
+    <div class="item top reveal"><div class="num">15</div><div class="body">
+      <h3>Gürtelrose-Impfung</h3>
+      <p><b>Impfstatus ab 50 ärztlich abklären.</b> Die Impfung ist ohnehin empfohlen, der mögliche Demenzeffekt wäre ein Bonus.</p>
+      <div class="evi">Ein natürliches Experiment aus Wales zeigte rund 20 Prozent weniger Demenzdiagnosen bei Geimpften. Die Hinweise verdichten sich.</div>
+      <span class="src">Eyting et al., Nature 2025</span>
+    </div></div>
+
+    <div class="item money reveal"><div class="num">16</div><div class="body">
+      <h3>Spar dir das Geld</h3>
+      <p><b>Ginkgo, Omega-3-Kapseln und „Brain Booster"</b> haben in großen Studien nicht vor Demenz geschützt. Vitamin D nur bei nachgewiesenem Mangel ausgleichen.</p>
+      <span class="src">GEM, JAMA 2008 · VITAL-Cog 2021</span>
+    </div></div>
+  </div>
+</section>
+
+<!-- CHECKLISTE AB 40 -->
+<section id="liste">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Zum Mitnehmen</div>
+      <h2>Deine Checkliste ab 40.</h2>
+      <p>Sechs Dinge, die du beim nächsten Arzttermin ansprechen kannst.</p>
+    </div>
+    <div class="check">
+      <div class="row reveal">Blutdruck zu Hause messen</div>
+      <div class="row reveal">LDL und einmal Lp(a) bestimmen</div>
+      <div class="row reveal">HbA1c bestimmen</div>
+      <div class="row reveal">Hörtest (ab 50)</div>
+      <div class="row reveal">Augenkontrolle</div>
+      <div class="row reveal">Impfstatus Gürtelrose (ab 50)</div>
+    </div>
+
+    <p class="quote reveal">„Prävention gibt dir keine Garantie. Aber die beste Chance, die wir haben."</p>
+
+    <div class="book reveal">
+      <div class="l">Mehr dazu in meinem Buch</div>
+      <p>Warum wir Altern falsch verstehen und was du wirklich beeinflussen kannst: Das liest du in <b>Die Alterslüge</b>. Den Link findest du in meiner Bio oder über meine Story auf Instagram.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="start">
+  <div class="container">
+    <div class="cta reveal">
+      <img class="cta-photo" src="lara-portrait.jpg" alt="Dr. Lara Vadlau" loading="lazy">
+      <h2>Wissen, das dein Gehirn<br>länger jung hält.</h2>
+      <p>Ich baue jede Woche Reels und Vertiefungen wie diese: die großen Studien, übersetzt in konkrete Schritte. Kein Hype, keine Wundermittel, nur das, was die Evidenz hergibt.</p>
+      <a class="btn" href="https://www.instagram.com/laravadlau/" target="_blank" rel="noopener">Folge für mehr auf Instagram →</a>
+      <div class="socials">
+        <a href="https://www.instagram.com/laravadlau/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" data-nl-open>Newsletter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE GUIDES -->
+<section class="more-sec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Weitere Guides</div>
+      <h2>Mehr Longevity-Wissen.</h2>
+      <p>Alle Guides von Dr. Lara Vadlau, jederzeit nachlesbar.</p>
+    </div>
+    <div class="more reveal">
+      <a href="https://lara-altern.vercel.app"><span class="t">Altern</span><span class="d">die 5-Punkte-Checkliste</span><span class="go">Ansehen &rarr;</span></a>
+      <a href="https://lara-blutwerte.vercel.app"><span class="t">Blutwerte</span><span class="d">Optimalwerte-Checkliste</span><span class="go">Ansehen &rarr;</span></a>
+      <a href="https://lara-muskelaufbau.vercel.app"><span class="t">Muskelaufbau</span><span class="d">die 4 Hebel mit Evidenz</span><span class="go">Ansehen &rarr;</span></a>
+      <a href="https://lara-mitochondrien.vercel.app"><span class="t">Mitochondrien</span><span class="d">Zellkraftwerke unter Strom</span><span class="go">Ansehen &rarr;</span></a>
+      <a href="https://lara-supplements.vercel.app"><span class="t">Supplements</span><span class="d">was wirklich wirkt</span><span class="go">Ansehen &rarr;</span></a>
+      <a href="https://lara-fasten.vercel.app"><span class="t">Fasten</span><span class="d">Autophagie &amp; Scheinfasten</span><span class="go">Ansehen &rarr;</span></a>
+    </div>
+    <p style="margin-top:22px;color:var(--muted-2);font-size:13.5px">Alle Guides auf einen Blick: <a href="https://lara-wissen.vercel.app">lara-wissen.vercel.app</a></p>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<section style="padding-top:20px">
+  <div class="container">
+    <div class="disclaimer reveal">
+      <b>Wichtiger Hinweis.</b> Dieser Guide dient der allgemeinen Gesundheitsinformation und ersetzt keine ärztliche Beratung oder Behandlung. Keine Maßnahme garantiert Schutz vor Demenz. Die genannten Studien geben den Stand 2024/2025 wieder.
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGE CTA -->
+<section class="chal" style="padding:0 0 26px">
+  <div class="container">
+    <div class="reveal" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(135deg,rgba(212,175,55,.14),rgba(212,175,55,.03));border:1px solid var(--line);border-radius:18px;padding:26px 30px">
+      <div style="min-width:240px;flex:1">
+        <div style="font-family:'Fraunces',serif;font-size:22px;color:#fff;font-weight:500">Du willst mehr?</div>
+        <div style="color:var(--muted);font-size:15px;margin-top:5px">Die <b style="color:var(--gold-soft)">30-Tage-Longevity-Challenge</b> gibt es jetzt im Angebot.</div>
+      </div>
+      <a href="https://hi.switchy.io/zFRA" target="_blank" rel="noopener" style="flex:none;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#1a1206;font-weight:600;font-size:15px;padding:14px 28px;border-radius:999px;white-space:nowrap;text-decoration:none;box-shadow:0 10px 26px rgba(212,175,55,.22)">Zur 30-Tage-Challenge &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>© 2026 Dr. Lara Vadlau · Longevity Medicine</div>
+    <div>Wissens-Vertiefung zum Reel · Keyword: <b style="color:var(--gold)">DEMENZ</b> · <a href="https://lara-wissen.vercel.app/impressum">Impressum</a> · <a href="https://lara-wissen.vercel.app/datenschutz">Datenschutz</a></div>
+  </div>
+</footer>
+
+<!-- NEWSLETTER MODAL -->
+<div class="nl-overlay" id="nlOverlay" role="dialog" aria-modal="true" aria-label="Newsletter-Anmeldung">
+  <div class="nl-modal">
+    <button class="nl-close" id="nlClose" aria-label="Schliessen">&times;</button>
+    <div id="nlForming">
+      <h3>Newsletter</h3>
+      <p class="intro">Longevity-Wissen, ehrlich eingeordnet. Kein Spam, jederzeit abbestellbar.</p>
+      <form id="nlForm" novalidate>
+        <div class="nl-field"><label for="nlName">Name</label><input id="nlName" name="name" type="text" required autocomplete="name"></div>
+        <div class="nl-field"><label for="nlEmail">E-Mail-Adresse</label><input id="nlEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="nl-field"><label for="nlPhone">Handynummer <span class="opt">(optional)</span></label><input id="nlPhone" name="phone" type="tel" autocomplete="tel"></div>
+        <button class="nl-submit" type="submit">Anmelden</button>
+        <p class="nl-note">Mit Klick auf „Anmelden" willigst du ein, dass deine Angaben zum Versand des Newsletters gespeichert und verarbeitet werden. Du kannst dich jederzeit über den Abmeldelink in jeder E-Mail wieder abmelden. Mehr dazu in der <a href="https://lara-wissen.vercel.app/datenschutz" target="_blank" rel="noopener" style="color:var(--gold-soft)">Datenschutzerklärung</a>.</p>
+      </form>
+    </div>
+    <div id="nlDone" class="nl-success" style="display:none">
+      <div class="ok">&#10003;</div>
+      <h3>Danke, du bist dabei!</h3>
+      <p class="intro">Wir haben deine Anmeldung erhalten.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const prog=document.getElementById('progress');
+addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100+'%';});
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+(function(){
+  var ENDPOINT="https://script.google.com/macros/s/AKfycbxr7dsmt1WNeWHnz8ORkzMpfqTb0o7GfyZQCNAbmtPFQ9CBpt3sR93Pl4tDfr-BupeviA/exec";
+  var SOURCE="DEMENZ";
+  var ov=document.getElementById('nlOverlay');
+  if(!ov)return;
+  function open(e){if(e)e.preventDefault();ov.classList.add('open');setTimeout(function(){var n=document.getElementById('nlName');if(n)n.focus();},60);}
+  function close(){ov.classList.remove('open');}
+  document.querySelectorAll('[data-nl-open]').forEach(function(a){a.addEventListener('click',open);});
+  document.getElementById('nlClose').addEventListener('click',close);
+  ov.addEventListener('click',function(e){if(e.target===ov)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  document.getElementById('nlForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('nlName').value.trim();
+    var email=document.getElementById('nlEmail').value.trim();
+    var phone=document.getElementById('nlPhone').value.trim();
+    if(!name||!email){return;}
+    var btn=this.querySelector('.nl-submit');btn.disabled=true;btn.textContent='Wird gesendet...';
+    var body=new URLSearchParams({name:name,email:email,phone:phone,source:SOURCE}).toString();
+    var done=function(){document.getElementById('nlForming').style.display='none';document.getElementById('nlDone').style.display='block';};
+    fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},body:body}).then(done).catch(done);
+  });
+})();
+(function(){
+  var b=document.getElementById('shareBtn'); if(!b) return;
+  b.addEventListener('click',async function(){
+    var d={title:document.title,url:location.href};
+    try{
+      if(navigator.share){await navigator.share(d);}
+      else{await navigator.clipboard.writeText(location.href); b.textContent='Link kopiert';setTimeout(function(){b.textContent='Link teilen';},2000);}
+    }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
